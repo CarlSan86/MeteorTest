@@ -1,0 +1,1 @@
+Capturas = new Meteor.Collection('capturas');

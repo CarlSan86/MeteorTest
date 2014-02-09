@@ -1,0 +1,19 @@
+<template name="tabla">
+	<div class="tabla">
+		<table class="table table-striped table-bordered table-hover">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Usuario</th>
+					<th>Valor</th>
+					<th>Registro</th>
+				</tr>
+			</thead>
+			<tbody>
+			{{#each registros}}
+				{{> registro}}
+			{{/each}}
+			</tbody>
+		</table>
+	</div>
+</template>
