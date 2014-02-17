@@ -20,6 +20,6 @@
 
 Template.tabla.helpers({
 	registros: function(){
-		return Capturas.find({tipoValor:"Inventario",valorCapturado:"5.00"});
+		return Capturas.find({tipoValor:"Inventario",valorCapturado:"5.00",categoria:"Jugos Premium"});
 	}
 });
