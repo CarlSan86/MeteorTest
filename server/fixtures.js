@@ -11,8 +11,8 @@ if(Capturas.find().count() === 0){
  //        },
  //    });
 
-    var result = Meteor.call("GET", "201.151.124.53:8082/json/valores/tabla.php",
-  		{params: {etapa: 2994}});
+    // var result = Meteor.call("GET", "201.151.124.53:8082/json/valores/tabla.php",
+  		// {params: {etapa: 2994}});
 
 	// Capturas.insert({
 	// 	id: "1",
