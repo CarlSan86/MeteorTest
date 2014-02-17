@@ -2,7 +2,7 @@ if(Capturas.find().count() === 0){
 	$.ajax({
 	    type: "GET",
 	    datatype: "json",
-	    url: "http://201.151.124.53:8082/json/valores/tabla.php?etapa=2994",
+	    url: "http://201.151.124.53:8082/json/valores/tabla.php?etapa=2994&registros=100",
 	    success:function(jsonData){
 	        str = jQuery.parseJSON(jsonData);
 			  $.each(str, function(k, v)
@@ -16,10 +16,10 @@ if(Capturas.find().count() === 0){
 	});
 }
 
-$('#tabla-prods').dataTable();
+$('table').dataTable();
 
 Template.tabla.helpers({
 	registros: function(){
-		return Capturas.find();
+		return Capturas.find().limit( 1 );
 	}
 });
