@@ -1,4 +1,4 @@
-if(Capturas.find().count() === 0){
+
 	$.ajax({
 	    type: "GET",
 	    datatype: "json",
@@ -14,7 +14,7 @@ if(Capturas.find().count() === 0){
 	        alert('Error en JSON Data');
 	    },
 	});
-}
+
 
 $('table').dataTable();
 
