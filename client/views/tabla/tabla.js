@@ -2,7 +2,7 @@
 	$.ajax({
 	    type: "GET",
 	    datatype: "json",
-	    url: "http://201.151.124.53:8082/json/valores/tabla.php?etapa=2994&registros=100",
+	    url: "http://201.151.124.53:8082/json/valores/tabla.php?etapa=2994&registros=1000",
 	    success:function(jsonData){
 	        str = jQuery.parseJSON(jsonData);
 			  $.each(str, function(k, v)
